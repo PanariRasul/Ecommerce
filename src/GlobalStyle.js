@@ -1,6 +1,8 @@
-import { createGlobalStyle } from "styled-components";
+import {
+  createGlobalStyle
+} from "styled-components";
 
-export const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle `
 
 * {
   margin: 0;
@@ -19,8 +21,8 @@ html {
 
 body {
   overflow-x: hidden;
-   scrollbar-color: rgb(98 84 243);
-    scrollbar-width: thin;
+  scrollbar-color: rgb(98 84 243);
+  scrollbar-width: thin;
 }
 
 body::-webkit-scrollbar {
@@ -28,22 +30,22 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-   background-color: rgb(24 24 29);
+  background-color: rgb(24 24 29);
 }
 
 body::-webkit-scrollbar-thumb {
- 
+
   background: #fff;
-    border: 5px solid transparent;
-    border-radius: 9px;
-    background-clip: content-box;
+  border: 5px solid transparent;
+  border-radius: 9px;
+  background-clip: content-box;
 }
 
 h1,
 h2,
 h3,
 h4 {
-   font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
 
 }
 
@@ -53,11 +55,11 @@ h1 {
   font-weight: 900;
 }
 
- h2 {
-   color: ${({ theme }) => theme.colors.heading};
-   font-size: 4.4rem;
-   font-weight: 300;
-   white-space: normal;
+h2 {
+  color: ${({ theme }) => theme.colors.heading};
+  font-size: 4.4rem;
+  font-weight: 300;
+  white-space: normal;
   
   }
 
@@ -104,27 +106,27 @@ ${"" /* resuable code section  */}
 }
 
 .grid-four-column{
-   grid-template-columns: 1fr 1.2fr .5fr .8fr ;
+  grid-template-columns: 1fr 1.2fr .5fr .8fr ;
 }
 
 .grid-five-column{
   grid-template-columns: repeat(5, 1fr);
 }
 
-  .common-heading {
+.common-heading {
       font-size: 3.8rem;
       font-weight: 600;
       margin-bottom: 6rem;
       text-transform: capitalize;
-    }
+}
 
-     .intro-data {
+.intro-data {
       margin-bottom: 0;
       text-transform: uppercase;
       color: #5138ee;
     }
 
-   .caption {
+.caption {
       position: absolute;
       top: 15%;
       right: 10%;
@@ -142,7 +144,7 @@ input, textarea{
     padding: 1.6rem 2.4rem;
     border: 1px solid ${({ theme }) => theme.colors.border};
     text-transform: uppercase;
-   box-shadow: ${({ theme }) => theme.colors.shadowSupport};
+  box-shadow: ${({ theme }) => theme.colors.shadowSupport};
 }
     input[type="submit"]{
     max-width: 16rem;
@@ -164,8 +166,8 @@ input, textarea{
   }
   }
 
-   @media (max-width: ${({ theme }) => theme.media.mobile}) {
-       html {
+@media (max-width: ${({ theme }) => theme.media.mobile}) {
+      html {
       font-size: 50%;
     }
 
