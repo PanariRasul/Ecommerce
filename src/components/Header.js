@@ -24,12 +24,12 @@ const MainHeader = styled.header`
 
     .newlogo {
       margin-left:20px;
-      width:10px;
-      height:60px;
+      width:160px;
+      height:80px;
       
     }
     .newlogo img {
-      width=auto;
+      width=160px;
       height:100%;
       border-radius:5px;
     }

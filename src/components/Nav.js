@@ -18,8 +18,8 @@ const Nav = () => {
       &:visited {
         display:inline-block;
         text-decoration:none;
-        font-weight:500;
-        font-size:1.8rem;
+        font-weight:550;
+        font-size:2.0rem;
         text-transform:uppercase;
         color:black;
         color:${({ theme }) => theme.colors.black };
