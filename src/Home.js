@@ -2,6 +2,7 @@ import React from "react";
 import HeroSection from "./components/HeroSection";
 import Trusted from "./components/Truested";
 import Services from "./components/Services";
+import FeatureProduct from "./components/FeatureProduct";
 
 
 const Home = () => {
@@ -13,6 +14,7 @@ return (
 
     <>
         <HeroSection myData={data} />
+        <FeatureProduct/>
         <Services/>
         <Trusted/>
         
