@@ -1,11 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import { Nav } from './Nav';
+import Nav  from './Nav';
 const Header = () => {
   return (
     <MainHeader>
-        <NavLink to="/">
+        <NavLink className="newlogo" to="/">
             <img src='./images/logo.png' alt='my logoimage'/>
         </NavLink>
         <Nav />
@@ -22,8 +22,22 @@ const MainHeader = styled.header`
     align-items:center;
     position:relative;
 
-    .logo {
-        height:5rem;
+    .newlogo {
+      margin-left:20px;
+      width:10px;
+      height:60px;
+      
+    }
+    .newlogo img {
+      width=auto;
+      height:100%;
+      border-radius:5px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.media.mobile}) {
+     .newlogo {
+      height:40px;
+      margin-left:0px;
     }
 `;
 
