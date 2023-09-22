@@ -178,6 +178,11 @@ const Wrapper = styled.section`
     align-items: center;
   }
 
+  .product_images {
+    display:flex;
+    alien-item:center;
+  }
+
   .page_loading {
     font-size: 3.2rem;
     display: flex;
